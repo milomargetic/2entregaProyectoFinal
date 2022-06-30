@@ -1,0 +1,98 @@
+/* estilo para el index que se encuentra todo cn bootstrap */
+* {
+    padding: 0;
+    margin: 0;
+  }
+header{
+    background-color: #a3a3a3;
+    color: #000000;
+}
+
+.navbar-color, .estilo-a-mail{
+    color: #000000 !important;
+}
+.estilo-text-h1, .estilo-text-h2,.estilo-text-h4{
+    background-color: #000000;
+    color: #ffffff;
+    background-image:(#000000,#dbcbbd);
+}
+
+.color-info-main, .estilo-contacto{
+    background-color: #F3EFEE;
+    color: #000000;
+}
+
+.estilo-a-imagen-footer, .estilo-a-mail{
+    text-decoration: none;
+}
+
+.estilo-text-h3{
+    font-size: 1rem;
+}
+
+.estilo-p-telefono, .estilo-a-mail,
+.estilo-p-direccion, .estilo-text-h4{
+    font-size: 0.7rem;
+}
+
+
+
+.estilo-imagen-producto{
+    width: 18rem
+}
+
+/* aparecer del titulo de bienvenida */
+.estilo-titulo-index{
+    font-family: 'Open Sans', sans-serif;
+    font-size:2.2rem;
+    color: #000000;
+    text-align: center;
+    background-image: linear-gradient(rgb(168, 167, 167),#a3a3a3);
+    padding: 1px;
+    text-transform: uppercase;
+    animation-name: aparecer;
+    animation-duration: 2s;
+} 
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*tamaño de las imagenes*/
+.transforma-imagen{
+    transition: transform .75s;
+    inset: 0;
+    object-fit: cover;
+}
+.estilo-imagen-producto:hover{
+    transform: scale(1.05);
+}
+
+/*media query */
+@media (max-width:768px) {
+    .estilo-imagen-producto, .img-info{
+        width: 8rem
+    }
+    .card-title, .card-text{
+        font-size: 0.7rem;
+    }
+
+    .img-info{
+        width: 4rem
+    }
+/* aparecer del titulo de bienvenida */
+    .estilo-titulo-index{
+        font-family: 'Open Sans', sans-serif;
+        font-size:1.4rem;
+        color: #000000;
+        text-align: center;
+        background-image: linear-gradient(#F3EFEE,#dbcbbd);
+        padding: 4px;
+        text-transform: uppercase;
+        animation-name: aparecer;
+        animation-duration: 2s;
+    }     
+}

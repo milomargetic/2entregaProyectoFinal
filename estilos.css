@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/*media query */
+@media screen and (min-width: 320px) {
+  .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
+    background-color: #FFFFFF;
+    /* animacion de los titulos y propiedades*/
+  }
+  .mainProducto div .mainTitulo, .mainPreguntas div .mainTitulo, .mainNosotros div .mainTitulo, .mainComun div .mainTitulo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    color: #6E2D0F;
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F3EFEE), to(#dbcbbd));
+    background-image: linear-gradient(#F3EFEE, #dbcbbd);
+    padding: 4px;
+    text-transform: uppercase;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .mainProducto .sProdDest {
+    margin: 20px;
+    padding: 0px;
+    background-color: #F3EFEEe3;
+    /* propiedades al bloque de productos APLICA PARA  PRODUCTOS */
+  }
+  .mainProducto .sProdDest .divProd2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (4fr)[4];
+        grid-template-rows: repeat(4, 4fr);
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2 {
+    padding: 10px;
+    overflow: hidden;
+    /*tamaño de las imagenes*/
+    /*Propiedades al H4  HTML Productos */
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2 .prodImagen {
+    width: 25vh;
+    -webkit-transition: -webkit-transform .75s;
+    transition: -webkit-transform .75s;
+    transition: transform .75s;
+    transition: transform .75s, -webkit-transform .75s;
+    inset: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2 .hDesc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    color: #6E2D0F;
+    text-align: left;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+  }
+  .mainPreguntas .fotosPreguntasF {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainPreguntas .fotosPreguntasF div {
+    padding: 5px;
+  }
+  .mainPreguntas .fotosPreguntasF div img {
+    width: 10vh;
+    border-radius: 200px;
+    -webkit-transition: -webkit-transform .75s;
+    transition: -webkit-transform .75s;
+    transition: transform .75s;
+    transition: transform .75s, -webkit-transform .75s;
+    inset: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 5px 5px 10px #0c0c0cc4;
+            box-shadow: 5px 5px 10px #0c0c0cc4;
+    border: 0px;
+  }
+  .mainPreguntas .fotosPreguntasF div:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .mainPreguntas .sNosotros {
+    padding: 20px;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl {
+    text-align: center;
+    list-style: none;
+    background-color: #F3EFEEe3;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi {
+    /* H2 de las preguntas frecuentes */
+    /*parrafo de las respuestas de las pregintas frecuentes*/
+    /* lista de las respuestas de preguntas frecuentes*/
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainH2 {
+    font-family: "Open Sans", sans-serif;
+    color: #6E2D0F;
+    padding-top: 1%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainPar {
+    font-family: "Open Sans", sans-serif;
+    color: #6E2D0F;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1px;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .ulList {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    color: #6E2D0F;
+    padding: 0;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .mainNosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 0.1fr 1.8fr 1fr;
+        grid-template-rows: 0.1fr 1.8fr 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "titulo titulo  titulo" "section section  section" "section section  section";
+    /* propiedades del H2 y parrafo de nosotros*/
+  }
+  .mainNosotros #divH1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titulo;
+  }
+  .mainNosotros .sNosotros {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: section;
+    margin: 60px;
+  }
+  .mainNosotros .asideNosotros {
+    display: none;
+  }
+  .mainNosotros #h2Nosotros {
+    color: #6E2D0F;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .mainNosotros #idParrafoNosotros {
+    color: #6E2D0F;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+  /* propiedades a la section de contacto*/
+  .sContacto {
+    font-family: "Open Sans", sans-serif;
+    padding: 30px;
+    /* propiedades al form de contacto*/
+  }
+  .sContacto #form {
+    background-color: #F3EFEEe3;
+    padding: 16px;
+    border-radius: 40px;
+    /* propiedades legend H2 de contacto*/
+  }
+  .sContacto #form .legendH2 {
+    color: #6E2D0F;
+    font-size: 1.5rem;
+    padding: 30px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  .sContacto #form .divFormulario {
+    color: #6E2D0F;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: justify;
+    /* propiedades al lebel del form de contacto*/
+    /* propiedades a los input del form de contacto*/
+    /* propiedades al box de mensaje  del form de contacto*/
+  }
+  .sContacto #form .divFormulario .label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    width: 250px;
+    font-size: 0.8rem;
+  }
+  .sContacto #form .divFormulario .input {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+    width: 250px;
+    padding: 3px 10px;
+    border: 1px solid #F3EFEE;
+    border-radius: 5px;
+    background-color: #d6d6d6;
+    margin: 8px 0;
+    display: inline-block;
+    text-align: center;
+  }
+  .sContacto #form .divFormulario .textarea {
+    width: 250px;
+    height: 200px;
+    border: 1px solid #F3EFEE;
+    border-radius: 5px;
+    background-color: #d6d6d6;
+    margin: 5px 0px;
+    resize: none;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8rem;
+  }
+  .sContacto #form .divFormularioBoton {
+    text-align: center;
+  }
+  .sContacto #form .divFormularioBoton input {
+    width: 30%;
+    padding: 8px 10px;
+    margin: 20px;
+    -webkit-box-shadow: 5px 5px 10px #0c0c0cc4;
+            box-shadow: 5px 5px 10px #0c0c0cc4;
+    border-radius: 10px;
+    color: #6E2D0F;
+    background-color: linear-gradient(#F3EFEE, #dbcbbd);
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mainProducto, .mainPreguntas, .mainNosotros, .mainComun {
+    background-color: #FFFFFF;
+    /* animacion de los titulos y propiedades*/
+  }
+  .mainProducto div .mainTitulo, .mainPreguntas div .mainTitulo, .mainNosotros div .mainTitulo, .mainComun div .mainTitulo {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.2rem;
+    color: #6E2D0F;
+    text-align: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F3EFEE), to(#dbcbbd));
+    background-image: linear-gradient(#F3EFEE, #dbcbbd);
+    padding: 1px;
+    text-transform: uppercase;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .mainProducto .sProdDest {
+    margin: 20px;
+    padding: 0px;
+    background-color: #F3EFEEe3;
+    /* propiedades al bloque de productos APLICA PARA  PRODUCTOS */
+  }
+  .mainProducto .sProdDest .divProd2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (3fr)[3];
+        grid-template-columns: repeat(3, 3fr);
+    -ms-grid-rows: (4fr)[4];
+        grid-template-rows: repeat(4, 4fr);
+    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2 {
+    width: 60%;
+    padding: 0px;
+    overflow: hidden;
+    position: static;
+    /*tamaño de las imagenes*/
+    /*Propiedades al H4  HTML Productos */
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2 .prodImagen {
+    width: 100%;
+    -webkit-transition: -webkit-transform .75s;
+    transition: -webkit-transform .75s;
+    transition: transform .75s;
+    transition: transform .75s, -webkit-transform .75s;
+    inset: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mainProducto .sProdDest .divProd2 .divProducDest2 .hDesc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #6E2D0F;
+    text-align: left;
+    width: 225px;
+    height: 50px;
+    margin: 10px;
+    overflow: hidden;
+  }
+  .mainPreguntas .fotosPreguntasF {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainPreguntas .fotosPreguntasF div {
+    padding: 10px;
+  }
+  .mainPreguntas .fotosPreguntasF div img {
+    width: 100%;
+    border-radius: 300px;
+    -webkit-transition: -webkit-transform .75s;
+    transition: -webkit-transform .75s;
+    transition: transform .75s;
+    transition: transform .75s, -webkit-transform .75s;
+    inset: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-box-shadow: 5px 5px 10px #0c0c0cc4;
+            box-shadow: 5px 5px 10px #0c0c0cc4;
+    border: 0px;
+  }
+  .mainPreguntas .fotosPreguntasF div:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .mainPreguntas .sNosotros {
+    padding: 50px;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl {
+    text-align: center;
+    list-style: none;
+    background-color: #F3EFEEe3;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi {
+    /* H2 de las preguntas frecuentes */
+    /*parrafo de las respuestas de las pregintas frecuentes*/
+    /* lista de las respuestas de preguntas frecuentes*/
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainH2 {
+    font-family: "Open Sans", sans-serif;
+    color: #6E2D0F;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .sectionMainPar {
+    font-family: "Open Sans", sans-serif;
+    color: #6E2D0F;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+  .mainPreguntas .sNosotros .sectionMainOl .sectinMainLi .ulList {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    color: #6E2D0F;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .mainNosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 0.1fr 1.8fr 1fr;
+        grid-template-rows: 0.1fr 1.8fr 1fr;
+    gap: 0px 0px;
+        grid-template-areas: "titulo titulo  titulo" "section section  imagen" "section section  imagen";
+    /* propiedades del H2 y parrafo de nosotros*/
+  }
+  .mainNosotros #divH1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: titulo;
+  }
+  .mainNosotros .sNosotros {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: section;
+  }
+  .mainNosotros .asideNosotros {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: imagen;
+    margin-top: 0;
+    display: inline;
+  }
+  .mainNosotros .asideNosotros img {
+    width: 100%;
+  }
+  .mainNosotros #h2Nosotros {
+    color: #6E2D0F;
+    padding: 20px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.2rem;
+  }
+  .mainNosotros #idParrafoNosotros {
+    color: #6E2D0F;
+    padding: 39px 200px;
+    text-align: center;
+    background-color: #F3EFEEe3;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+  }
+  /* propiedades a la section de contacto*/
+  .sContacto {
+    font-family: "Open Sans", sans-serif;
+    padding: 150px;
+    /* propiedades al form de contacto*/
+  }
+  .sContacto #form {
+    background-color: #F3EFEEe3;
+    padding: 16px;
+    border-radius: 50px;
+    /* propiedades legend H2 de contacto*/
+  }
+  .sContacto #form .legendH2 {
+    color: #6E2D0F;
+    font-size: 2.2rem;
+    padding: 30px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  .sContacto #form .divFormulario {
+    color: #6E2D0F;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: justify;
+    /* propiedades al lebel del form de contacto*/
+    /* propiedades a los input del form de contacto*/
+    /* propiedades al box de mensaje  del form de contacto*/
+  }
+  .sContacto #form .divFormulario .label {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    width: 500px;
+    font-size: 1rem;
+  }
+  .sContacto #form .divFormulario .input {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    width: 500px;
+    padding: 3px 10px;
+    border: 1px solid #F3EFEE;
+    border-radius: 5px;
+    background-color: #d6d6d6;
+    margin: 8px 0;
+    display: inline-block;
+    text-align: center;
+  }
+  .sContacto #form .divFormulario .textarea {
+    width: 500px;
+    height: 200px;
+    border: 1px solid #F3EFEE;
+    border-radius: 5px;
+    background-color: #d6d6d6;
+    margin: 8px 0;
+    resize: none;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .sContacto #form .divFormularioBoton {
+    text-align: center;
+  }
+  .sContacto #form .divFormularioBoton input {
+    width: 20%;
+    padding: 8px 16px;
+    margin: 20px;
+    -webkit-box-shadow: 5px 5px 10px #0c0c0cc4;
+            box-shadow: 5px 5px 10px #0c0c0cc4;
+    border-radius: 10px;
+    color: #6E2D0F;
+    background-color: linear-gradient(#F3EFEE, #dbcbbd);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* body {
+  background-color: #FFFFFF;
+}
+/*# sourceMappingURL=estilos.css.map */
